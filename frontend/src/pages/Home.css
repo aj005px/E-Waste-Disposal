@@ -1,0 +1,30 @@
+.problem-list,
+.benefit-list {
+  list-style: none;
+  padding: 0;
+}
+
+.problem-list li,
+.benefit-list li {
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background-color: var(--light-gray);
+  border-left: 4px solid var(--primary-green);
+  border-radius: 4px;
+}
+
+.action-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.action-card h3 {
+  margin-bottom: 0.75rem;
+}
+
+.action-card p {
+  flex: 1;
+  margin-bottom: 1rem;
+}

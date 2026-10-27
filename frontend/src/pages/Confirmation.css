@@ -1,0 +1,79 @@
+.confirmation-container {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.request-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.detail-row {
+  padding: 0.75rem;
+  background-color: var(--light-gray);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.condition-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.condition-badge.working {
+  background-color: var(--light-green);
+  color: var(--primary-green);
+}
+
+.condition-badge.broken {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  background-color: #cce5ff;
+  color: #004085;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.guidance-section {
+  background-color: var(--light-green);
+}
+
+.guidance-text {
+  background-color: var(--white);
+  padding: 1rem;
+  border-radius: 4px;
+  border-left: 4px solid var(--accent-green);
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .action-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .action-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
